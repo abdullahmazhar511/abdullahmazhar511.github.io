@@ -1,428 +1,400 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LY7E4D0GT5"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-LY7E4D0GT5');
     </script>
-      
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <script src="https://kit.fontawesome.com/cf1c3caa39.js" crossorigin="anonymous"></script>
 
     <!-- Primary Meta Tags -->
+    <title>Abdullah Mazhar</title>
     <meta name="title" content="Abdullah Mazhar">
-    <meta name="description"
-        content="abdullah's personal website">
-    
+    <meta name="description" content="Abdullah Mazhar is a PhD candidate at IIIT Delhi working on responsible and safe AI for mental health — LLM interpretability, therapeutic alignment, and multimodal understanding.">
+    <meta name="author" content="Abdullah Mazhar">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://abdullahmazhar511.github.io/">
-    <meta property="og:title" content="Abdullah Mazhar">
-    <meta property="og:description"
-        content="abdullah's personal website">
-    <meta property="og:image"
-        content="images/abdullah.jpeg">
-    
+    <meta property="og:site_name" content="Abdullah Mazhar">
+    <meta property="og:title" content="Abdullah Mazhar — PhD Candidate, IIIT Delhi">
+    <meta property="og:description" content="Responsible & Safe AI for Mental Health: LLM interpretability, therapeutic alignment, and multimodal understanding.">
+    <meta property="og:image" content="images/abdullah.jpeg">
+
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://abdullahmazhar511.github.io/">
-    <meta property="twitter:title" content="Abdullah Mazhar">
-    <meta property="twitter:description"
-        content="abdullah's personal website">
-    <meta property="twitter:image"
-        content="images/abdullah.jpeg">
-
-    <meta name="theme-color" content="#222222">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="images/nicons/apple-touch-icon.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-    <meta property="og:site_name" content="Abdullah Mazhar">
-    <meta property="og:title" content="Research Scholar" />
-    <meta property="og:description" content="Abdullah Mazhar is a undergrad student at IIIT Dharwad India." />
-    <meta property="og:image" itemprop="image" content="images/abdullah.jpeg">
-    <meta property="og:type" content="website" />
-    <meta property="og:updated_time" content="1440432930" />
+    <meta property="twitter:title" content="Abdullah Mazhar — PhD Candidate, IIIT Delhi">
+    <meta property="twitter:description" content="Responsible & Safe AI for Mental Health: LLM interpretability, therapeutic alignment, and multimodal understanding.">
+    <meta property="twitter:image" content="images/abdullah.jpeg">
 
     <link rel="icon" href="images/abdullah.jpeg">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Fonts + Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <style>
+      :root {
+        --bg:        #ffffff;
+        --surface:   #f7f8fa;
+        --text:      #1a1d21;
+        --muted:     #5b6572;
+        --faint:     #8a94a2;
+        --border:    #e6e9ee;
+        --accent:    #1f3d63;   /* deep navy */
+        --accent-2:  #2f6db5;   /* link blue  */
+        --tag-bg:    #eef2f7;
+        --shadow:    0 1px 3px rgba(20,30,50,.06), 0 8px 24px rgba(20,30,50,.05);
+      }
+      html[data-theme="dark"] {
+        --bg:        #0f1317;
+        --surface:   #161b21;
+        --text:      #e7ebef;
+        --muted:     #9aa6b3;
+        --faint:     #6d7885;
+        --border:    #232a32;
+        --accent:    #9db8dc;
+        --accent-2:  #86b0e3;
+        --tag-bg:    #1b222b;
+        --shadow:    0 1px 3px rgba(0,0,0,.3), 0 8px 24px rgba(0,0,0,.35);
+      }
 
-      
-    <title>Abdullah Mazhar </title>
+      * { box-sizing: border-box; }
+      html { -webkit-text-size-adjust: 100%; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        font-size: 16.5px;
+        line-height: 1.7;
+        -webkit-font-smoothing: antialiased;
+        transition: background .25s ease, color .25s ease;
+      }
+      a { color: var(--accent-2); text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      strong { font-weight: 600; color: var(--text); }
+      hr { border: none; border-top: 1px solid var(--border); margin: 2.4rem 0; }
+
+      .wrap {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 3.2rem 1.6rem 4rem;
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        gap: 3.4rem;
+        align-items: start;
+      }
+
+      /* ---------- Sidebar ---------- */
+      .sidebar { position: sticky; top: 2.6rem; }
+      .photo {
+        width: 168px; height: 168px; border-radius: 50%;
+        object-fit: cover; display: block; margin-bottom: 1.1rem;
+        border: 1px solid var(--border);
+      }
+      .name {
+        font-family: 'Source Serif 4', Georgia, serif;
+        font-size: 1.7rem; font-weight: 600; letter-spacing: -.01em;
+        margin: 0 0 .2rem;
+      }
+      .role { color: var(--muted); font-size: .95rem; margin: 0 0 .15rem; }
+      .role .tag-accent { color: var(--accent-2); font-weight: 500; }
+      .affil { color: var(--faint); font-size: .86rem; margin: 0 0 1.3rem; }
+
+      .links { display: flex; flex-direction: column; gap: .12rem; margin-bottom: 1.4rem; }
+      .links a {
+        display: inline-flex; align-items: center; gap: .65rem;
+        color: var(--text); font-size: .93rem; padding: .28rem 0;
+      }
+      .links a i { width: 18px; text-align: center; color: var(--accent); font-size: 1rem; }
+      .links a:hover { color: var(--accent-2); text-decoration: none; }
+      .links a:hover i { color: var(--accent-2); }
+
+      .theme-toggle {
+        display: inline-flex; align-items: center; gap: .55rem;
+        background: var(--surface); border: 1px solid var(--border);
+        color: var(--muted); border-radius: 999px;
+        padding: .38rem .8rem; font-size: .82rem; cursor: pointer;
+        font-family: inherit; transition: all .2s ease;
+      }
+      .theme-toggle:hover { color: var(--text); border-color: var(--faint); }
+
+      /* ---------- Main ---------- */
+      .main { min-width: 0; }
+      .section-title {
+        font-family: 'Source Serif 4', Georgia, serif;
+        font-size: 1.28rem; font-weight: 600; color: var(--text);
+        margin: 0 0 1rem; padding-bottom: .45rem;
+        border-bottom: 1px solid var(--border);
+      }
+      .lead { margin-top: 0; }
+      .hello { font-family:'Source Serif 4',Georgia,serif; font-size: 1.55rem; font-weight: 600; margin: 0 0 .8rem; }
+      p { margin: 0 0 1rem; }
+
+      /* Research interests pills */
+      .interests { display: flex; flex-wrap: wrap; gap: .5rem; margin: .2rem 0 .4rem; }
+      .pill {
+        background: var(--tag-bg); color: var(--text);
+        border: 1px solid var(--border); border-radius: 999px;
+        padding: .32rem .8rem; font-size: .84rem; font-weight: 500;
+      }
+
+      /* News */
+      .news { list-style: none; padding: 0; margin: 0; }
+      .news li {
+        display: grid; grid-template-columns: 92px 1fr; gap: 1rem;
+        padding: .5rem 0; font-size: .95rem;
+      }
+      .news .date { color: var(--faint); font-size: .82rem; font-weight: 600; padding-top: .12rem; white-space: nowrap; }
+
+      /* Publications */
+      .pub { display: grid; grid-template-columns: 118px 1fr; gap: 1.3rem; align-items: center; margin-bottom: 1.5rem; }
+      .pub-thumb {
+        background: var(--surface); border: 1px solid var(--border);
+        border-radius: 8px; padding: .55rem; display: flex; align-items: center; justify-content: center;
+        height: 76px;
+      }
+      .pub-thumb img { max-width: 100%; max-height: 60px; object-fit: contain; }
+      .pub-title { font-weight: 600; color: var(--text); display: block; margin-bottom: .12rem; line-height: 1.4; }
+      .pub-authors { color: var(--muted); font-size: .92rem; }
+      .me { color: var(--text); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+      .venue { display: block; margin: .25rem 0 .4rem; font-size: .9rem; color: var(--muted); }
+      .venue b { color: var(--accent-2); }
+      .badge {
+        display: inline-block; font-size: .72rem; font-weight: 600; letter-spacing: .02em;
+        text-transform: uppercase; padding: .12rem .5rem; border-radius: 4px; margin-left: .35rem;
+        background: var(--tag-bg); color: var(--accent-2); border: 1px solid var(--border); vertical-align: middle;
+      }
+      .badge.review { color: #b4690e; }
+      .tags a {
+        display: inline-block; font-size: .8rem; font-weight: 500;
+        border: 1px solid var(--border); border-radius: 5px;
+        padding: .12rem .5rem; margin: .1rem .25rem .1rem 0; color: var(--accent-2);
+        background: var(--surface);
+      }
+      .tags a:hover { border-color: var(--accent-2); text-decoration: none; }
+
+      /* Experience */
+      .xp { display: grid; grid-template-columns: 60px 1fr; gap: 1.1rem; align-items: center; padding: .7rem 0; }
+      .xp-logo { width: 52px; height: 52px; display: flex; align-items: center; justify-content: center; }
+      .xp-logo img { max-width: 100%; max-height: 46px; object-fit: contain; }
+      .xp h4 { margin: 0; font-size: 1rem; font-weight: 600; }
+      .xp .org { color: var(--muted); font-size: .92rem; }
+      .xp .when { color: var(--faint); font-size: .82rem; }
+      .xp .note { color: var(--muted); font-size: .9rem; margin-top: .15rem; }
+
+      /* ---------- Responsive ---------- */
+      @media (max-width: 820px) {
+        .wrap { grid-template-columns: 1fr; gap: 2rem; padding-top: 2.2rem; }
+        .sidebar { position: static; text-align: center; }
+        .photo { margin: 0 auto 1rem; }
+        .links { align-items: center; }
+        .links a { justify-content: center; }
+        .pub { grid-template-columns: 1fr; gap: .7rem; }
+        .pub-thumb { max-width: 140px; }
+        .news li { grid-template-columns: 1fr; gap: .1rem; }
+        .news .date { padding-top: 0; }
+      }
+    </style>
   </head>
 
   <body>
-    <div class="container pt-5 allstuffp">
-        <div class="row pt-5 allstuff">
-            <div class="col-md-3 pt-5">
-                <div class="fixed-posi">
-                    <p class="name" style="font-family: 'Titillium Web', sans-serif;"><span style="font-weight: 600;">Abdullah Mazhar</span></p>
-                    <img lsrc="images/abdullah.jpeg" class="profilepic mt-3 mb-2 rounded ml-2">
-                    
-                    <div class="pt-5 menur"><a class="menulink" target="_blank" href="./assets/Abdullah_Mazhar_Resume_phd_latest.pdf"><i class="had fas fa-file-alt"></i>&nbsp; resume</a></div>
-<div class="">
-  <a class="menulink" href="https://mail.google.com/mail/?view=cm&fs=1&to=abdullahm@iiitd.ac.in" target="_blank">
-    <i class="fas fa-envelope"></i>&nbsp; email
-  </a>
-</div>
+    <div class="wrap">
+      <!-- ===================== SIDEBAR ===================== -->
+      <aside class="sidebar">
+        <img class="photo" src="images/abdullah.jpeg" alt="Abdullah Mazhar">
+        <h1 class="name">Abdullah Mazhar</h1>
+        <p class="role">PhD Candidate · <span class="tag-accent">IIIT Delhi</span></p>
+        <p class="affil">Responsible &amp; Safe AI for Mental Health</p>
 
+        <nav class="links">
+          <a href="./assets/Abdullah_Mazhar_Resume_phd_latest.pdf" target="_blank"><i class="fa-regular fa-file-lines"></i> CV / Resume</a>
+          <a href="mailto:abdullahm@iiitd.ac.in"><i class="fa-regular fa-envelope"></i> Email</a>
+          <a href="https://scholar.google.com/citations?user=yFJYyQkAAAAJ&hl=en" target="_blank"><i class="fa-solid fa-graduation-cap"></i> Google Scholar</a>
+          <a href="https://github.com/abdullahmazhar511" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/abdullah-mazhar-129259164/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+          <a href="https://x.com/abdulla20819511" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter / X</a>
+        </nav>
 
-                    <div class=""><a class="menulink" target="_blank" href="https://scholar.google.com/citations?user=yFJYyQkAAAAJ&hl=en"><i class="fab fa-google"></i>&nbsp; scholar</a></div>
-                    <div class=""><a class="menulink" target="_blank" href="https://github.com/abdullahmazhar511"><i class="had fab fa-github"></i>&nbsp; github</a></div>
-                    <div class=""><a class="menulink" target="_blank" href="https://www.linkedin.com/in/abdullah-mazhar-129259164/"><i class="fab fa-linkedin"></i>&nbsp; linkedin</a></div>
-                    <div class=""><a class="menulink" target="_blank" href="https://x.com/abdulla20819511"><i class="fab fa-twitter"></i>&nbsp; twitter</a></div>
-                </div>
-            </div>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <i class="fa-solid fa-moon" id="themeIcon"></i> <span id="themeLabel">Dark mode</span>
+        </button>
+      </aside>
 
-            <div class="col-md-9 pt-5 about">
-                    <p class="header pt-3">Hello 👋</p>
-                <p>
-                I am a Ph.D. Candidate at <strong>IIIT Delhi</strong>, working under the guidance of 
-                <a href="https://scholar.google.com/citations?user=KUcO6LAAAAAJ&hl=en" target="_blank"><strong>Dr. Md. Shad Akhtar</strong></a> 
-                at the <a href="https://flamelab.iiitd.edu.in/" target="_blank"><strong>FLaMe Lab</strong></a>. 
-                I completed my undergraduate degree in Computer Science and Engineering at the 
-                <strong>Institute of Engineering and Rural Technology (IERT), Allahabad, India</strong>. 
-                My research interests lie at the intersection of <strong>Natural Language Processing (NLP)</strong>, 
-                <strong>Multimodal Systems</strong>, and <strong>Responsible AI for Mental Health</strong>.
+      <!-- ===================== MAIN ===================== -->
+      <main class="main">
+        <p class="hello">Hello 👋</p>
+        <p class="lead">
+          I am a Ph.D. Candidate at <strong>IIIT Delhi</strong>, advised by
+          <a href="https://scholar.google.com/citations?user=KUcO6LAAAAAJ&hl=en" target="_blank"><strong>Dr. Md. Shad Akhtar</strong></a>
+          at the <a href="https://flamelab.iiitd.edu.in/" target="_blank"><strong>FLaMe Lab</strong></a>.
+          My research builds <strong>trustworthy language and multimodal AI for mental health</strong>, across three threads:
+          mechanistic <strong>interpretability and safety</strong> of LLMs, principled evaluation of <strong>therapeutic alignment</strong>,
+          and understanding of <strong>implicit, figurative, and cross-lingual</strong> communication.
+        </p>
+        <p>
+          I have published at <strong>ACL 2026</strong> (Main, Oral), <strong>NeurIPS 2025</strong> (Poster), and
+          <strong>The Web Conference (WWW) 2025</strong> (Oral) — the last in collaboration with
+          <a href="https://scholar.google.com/citations?user=oMBGDGoAAAAJ&hl=en" target="_blank"><strong>Dr. Shweta Yadav</strong></a> (UIC).
+          Earlier, I was a Project Officer at <strong>IIT Madras</strong> building ASR/TTS pipelines for Indian languages under the
+          <strong>Bhashini</strong> mission, and before that a Data Scientist at Birlasoft and a Software Developer at Analytics2AI.
+        </p>
+        <p>To know more, see my <a href="./assets/Abdullah_Mazhar_Resume_phd_latest.pdf" target="_blank">CV</a> or drop me an <a href="mailto:abdullahm@iiitd.ac.in">email</a>.</p>
 
-                My research journey spans over two years, with publications including a 
-                <strong>Main Oral paper at ACL 2026</strong>, an 
-                <strong>Oral paper at The Web Conference (WWW) 2025</strong>, and in the 
-                <strong>Main Track of NeurIPS 2025</strong>. 
-
-                Previously, I worked as a Project Officer at IIT Madras, where I contributed to the 
-                Bhashini initiative by building end-to-end Automatic Speech Recognition (ASR)
-                and Text-to-Speech (TTS) pipelines for Indian languages. 
-                Before that, I worked as a Data Scientist at Birlasoft and a 
-                Software Developer at Analytics2AI.
-                </p>
-
-
-
-                        To know more, refer to my resume or drop me an <a href="mailto:abdullahm@iiitd.ac.in">email</a>!
-
-                        <!-- <br><br>
-                        <span style="color:rgb(143, 0, 0); font-size: large;"><b>I am on the job market. Currently, I am looking for a research internship position in the industry or academia tentatively starting from May/June.</b></span> -->
-                    <p class="header pt-3">News and Updates</p>
-
-                <ul>
-                <li><b>April 2026:</b> Our paper "<a href="https://arxiv.org/pdf/2604.05795">Measuring What Matters!! Assessing Therapeutic Principles in Mental-Health Conversation</a>" has been accepted in the <strong>Main Track of ACL 2026 (ORAL)</strong>.</li>
-                <li><b>Sep 2025:</b> Our paper "<a href="https://arxiv.org/pdf/2509.16660">Redefining Experts: Interpretable Decomposition of
-Language Models for Toxicity Mitigation</a>" has been accepted in the <strong>Main Track of NeurIPS 2025</strong>.</li>
-                <li><b>Aug 2025:</b> Received <strong>Google Research Grant</strong>, <strong>Microsoft Research Grant</strong>, and <strong>ACM India Travel Grant</strong> to present our WWW 2025 paper in Sydney, Australia.</li>
-                <li><b>Jan 2025:</b> Our paper <strong>AxiOM & M3H</strong> on multimodal understanding of mental health memes was accepted as an <strong>Oral paper</strong> at 
-                        <a href="https://www2025.thewebconf.org/" target="_blank">The Web Conference (ORAL) 2025</a>.
-                </li>
-                <li><b>Dec 2023:</b> Started my Ph.D. in Computer Science at <strong>IIIT Delhi</strong>, advised by 
-                        <a href="https://scholar.google.co.in/citations?user=KUcO6LAAAAAJ&hl=en" target="_blank"><strong>Dr. Md. Shad Akhtar</strong></a>.
-                </li>
-                <li><b>Sep 2022:</b> Joined <strong>IIT Madras</strong> as a Project Officer, contributing to the <strong>Bhashini</strong> initiative by building end-to-end <strong>ASR</strong> and <strong>TTS</strong> systems for Indian languages.</li>
-                <li><b>May 2021:</b> Joined <strong>Birlasoft</strong> as a Data Scientist, where I worked on AI-driven insurance automation and customer support solutions until Sep 2022.</li>
-                </ul>
-
-        
-                    
-                    <hr>
-                    <p class="header pt-3">Publications</p>
-                <div class="row mb-3 align-items-center">
-                <div class="col-md-4 col-4 text-center">
-                        <img src="images/publication/acl.png" alt="ACL 2026(Main Track)" class="img-fluid pub-logo">
-                </div>
-                <div class="col-md- col-8">
-                        <p class="paper my-2 pl-2">
-                        <span class="papertitle">Measuring What Matters!! Assessing Therapeutic Principles in Mental-Health Conversation</span><br>
-                        <span class="thisauthor">Abdullah Mazhar</span>,Het Riteshkumar Shah , Aseem Srivastava, , Smriti Joshi, Md Shad Akhtar<br>
-                        <span class="conf"><a class="confshort" href="https://2026.aclweb.org/" target="_blank"><b>ACL '26</b> | </a>Main Track</span><br>     
-                        <a class="tag" href="https://arxiv.org/pdf/2604.05795" target="_blank">paper</a> 
-                        <a class="tag" href="" target="_blank">code</a>
-                        <a class="tag" href="" target="_blank">poster</a>
-                        </p>
-                </div>
-                </div>
-                     <div class="row mb-3 align-items-center">
-                <div class="col-md-4 col-4 text-center">
-                        <img src="images/publication/neurips.png" alt="NEURIPS 2025(Main Track)" class="img-fluid pub-logo">
-                </div>
-                <div class="col-md- col-8">
-                        <p class="paper my-2 pl-2">
-                        <span class="papertitle">Redefining Experts: Interpretable Decomposition of Language Models for Toxicity Mitigation</span><br>
-                        <span class="thisauthor">Zuhair Hasan Shaikh</span>, Abdullah Mazhar, Aseem Srivastava, Md Shad Akhtar<br>
-                        <span class="conf"><a class="confshort" href="https://neurips.cc//" target="_blank"><b>NEURIPS '25</b> | </a>Main Track</span><br>     
-                        <a class="tag" href="https://arxiv.org/pdf/2509.16660" target="_blank">paper</a> 
-                        <a class="tag" href="" target="_blank">code</a>
-                        <a class="tag" href="" target="_blank">poster</a>
-                        </p>
-                </div>
-                </div>
-                
-                <div class="row mb-3 align-items-center">
-                <div class="col-md-4 col-4 text-center">
-                        <img src="images/publication/www.jpeg" alt="WWW 2025" class="img-fluid pub-logo">
-                </div>
-                <div class="col-md- col-8">
-                        <p class="paper my-2 pl-2">
-                        <span class="papertitle">Figurative-cum-Commonsense Knowledge Infusion for Multimodal Mental Health Meme Classification</span><br>
-                        <span class="thisauthor">Abdullah Mazhar</span>, Zuhair Hasan Shaikh, Aseem Srivastava, Polly Ruhnke, Lavanya Vaddavalli, Sri Keshav Katragadda, Shweta Yadav, Md Shad Akhtar<br>
-                        <span class="conf"><a class="confshort" href="https://www2025.thewebconf.org/" target="_blank"><b>WWW '25</b></a> | Conference (A*) | The ACM Web Conference 2025 (Oral)</span><br>     
-                        <a class="tag" href="https://dl.acm.org/doi/10.1145/3696410.3714778" target="_blank">paper</a> 
-                        <a class="tag" href="https://github.com/flamenlp/M3H/tree/main" target="_blank">code</a>
-                        <a class="tag" href="https://docs.google.com/presentation/d/1P2-_LWPxBmQ4yKf6qfvWCjqjlWWLFNw7fbivZMl6C0I/edit?usp=sharing" target="_blank">poster</a>
-                        </p>
-                </div>
-                </div>
-                
-
-                    <!-- </p></div></div> -->
-                        <!-- Adding experience here=========================================================== -->
-                     <!-- Add this right below the Publications section -->
-                <hr>
-                <p class="header pt-3">Experience</p>
-
-                <div class="row">
-                <div class="col-lg-12">
-
-                <div class="card mb-3">
-                        <div class="row no-gutters align-items-center">
-                        <div class="col-md-2 text-center">
-                                <img src="images/logos/flame.png" class="img-fluid p-2" alt="IIIT Delhi logo">
-                        </div>
-                        <div class="col-md-10">
-                                <div class="card-body">
-                                <h5 class="card-title mb-0">Ph.D. Candidate</h5>
-                                <p class="card-text mb-0"><strong>IIIT Delhi · FLaMe Lab</strong></p>
-                                <p class="card-text"><small class="text-muted">Dec 2023 – Present · Delhi, India</small></p>
-                                </div>
-                        </div>
-                        </div>
-                </div>
-
-                <div class="card mb-3">
-                        <div class="row no-gutters align-items-center">
-                        <div class="col-md-2 text-center">
-                                <img src="images/logos/iitmadras.svg" class="img-fluid p-2" alt="IIT Madras logo">
-                        </div>
-                        <div class="col-md-10">
-                                <div class="card-body">
-                                <h5 class="card-title mb-0">Project Officer</h5>
-                                <p class="card-text mb-0"><strong>IIT Madras</strong></p>
-                                <p class="card-text"><small class="text-muted">Sep 2022 – Dec 2023 · Chennai, India</small></p>
-                                <p class="card-text"><em>Worked on the <strong>Bhashini initiative</strong>, building end-to-end <strong>ASR</strong> and <strong>TTS</strong> systems for Indian languages.</em></p>
-                                </div>
-                        </div>
-                        </div>
-                </div>
-
-                <div class="card mb-3">
-                        <div class="row no-gutters align-items-center">
-                        <div class="col-md-2 text-center">
-                                <img src="images/logos/birlasoft.png" class="img-fluid p-2" alt="Birlasoft logo">
-                        </div>
-                        <div class="col-md-10">
-                                <div class="card-body">
-                                <h5 class="card-title mb-0">Data Scientist</h5>
-                                <p class="card-text mb-0"><strong>Birlasoft Ltd.</strong></p>
-                                <p class="card-text"><small class="text-muted">May 2021 – Sep 2022 · Noida, India</small></p>
-                                <p class="card-text"><em>Developed solutions for <strong>Insurance Claim Automation</strong> using Azure AI, Chatbots, and ML models.</em></p>
-                                </div>
-                        </div>
-                        </div>
-                </div>
-
-
-
-                </div>
-                </div>
-
-
-                    
-            </div>
+        <!-- Research Interests -->
+        <p class="section-title" style="margin-top:2.2rem;">Research Interests</p>
+        <div class="interests">
+          <span class="pill">LLM Safety &amp; Interpretability</span>
+          <span class="pill">Responsible AI for Mental Health</span>
+          <span class="pill">Therapeutic Alignment &amp; Evaluation</span>
+          <span class="pill">Multimodal &amp; Figurative Understanding</span>
+          <span class="pill">Controllable Generation (RL / Steering)</span>
+          <span class="pill">Implicit Toxicity &amp; Intent</span>
         </div>
+
+        <!-- News -->
+        <p class="section-title" style="margin-top:2.2rem;">News &amp; Updates</p>
+        <ul class="news">
+          <li><span class="date">Apr 2026</span><span>Our paper “<a href="https://arxiv.org/pdf/2604.05795" target="_blank">Measuring What Matters!! Assessing Therapeutic Principles in Mental-Health Conversation</a>” was accepted to the <strong>Main Track of ACL 2026 (Oral)</strong>.</span></li>
+          <li><span class="date">2026</span><span>Two papers on <strong>faithful mental-health response generation</strong> and <strong>neuron-steered low-resource machine translation</strong> are <strong>under review at EMNLP 2026</strong>.</span></li>
+          <li><span class="date">Sep 2025</span><span>Our paper “<a href="https://arxiv.org/pdf/2509.16660" target="_blank">Redefining Experts: Interpretable Decomposition of Language Models for Toxicity Mitigation</a>” was accepted as a <strong>Poster at NeurIPS 2025</strong>.</span></li>
+          <li><span class="date">Aug 2025</span><span>Received <strong>Google Research</strong>, <strong>Microsoft India</strong>, and <strong>ACM India</strong> travel grants to present our WWW 2025 paper in Sydney, Australia.</span></li>
+          <li><span class="date">Jan 2025</span><span>Our paper <strong>AxiOM &amp; M3H</strong> on multimodal mental-health meme understanding was accepted as an <strong>Oral</strong> at <a href="https://www2025.thewebconf.org/" target="_blank">The Web Conference (WWW) 2025</a>.</span></li>
+          <li><span class="date">Dec 2023</span><span>Started my Ph.D. in Computer Science at <strong>IIIT Delhi</strong>, advised by <a href="https://scholar.google.co.in/citations?user=KUcO6LAAAAAJ&hl=en" target="_blank"><strong>Dr. Md. Shad Akhtar</strong></a>.</span></li>
+          <li><span class="date">Sep 2022</span><span>Joined <strong>IIT Madras</strong> as a Project Officer on the <strong>Bhashini</strong> initiative, building ASR/TTS systems for Indian languages.</span></li>
+        </ul>
+
+        <hr>
+
+        <!-- Publications -->
+        <p class="section-title">Publications</p>
+
+        <div class="pub">
+          <div class="pub-thumb"><img src="images/publication/acl.png" alt="ACL 2026"></div>
+          <div>
+            <span class="pub-title">Measuring What Matters!! Assessing Therapeutic Principles in Mental-Health Conversation</span>
+            <span class="pub-authors"><span class="me">Abdullah Mazhar</span>, Het Riteshkumar Shah, Aseem Srivastava, Smriti Joshi, Md. Shad Akhtar</span>
+            <span class="venue"><b>ACL 2026</b> · Main Conference <span class="badge">Oral</span></span>
+            <span class="tags">
+              <a href="https://arxiv.org/pdf/2604.05795" target="_blank">paper</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-thumb"><img src="images/publication/neurips.png" alt="NeurIPS 2025"></div>
+          <div>
+            <span class="pub-title">Redefining Experts: Interpretable Decomposition of Language Models for Toxicity Mitigation</span>
+            <span class="pub-authors">Zuhair Hasan Shaik, <span class="me">Abdullah Mazhar</span>, Aseem Srivastava, Md. Shad Akhtar</span>
+            <span class="venue"><b>NeurIPS 2025</b> <span class="badge">Poster</span></span>
+            <span class="tags">
+              <a href="https://arxiv.org/pdf/2509.16660" target="_blank">paper</a>
+            </span>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-thumb"><img src="images/publication/www.jpeg" alt="WWW 2025"></div>
+          <div>
+            <span class="pub-title">Figurative-cum-Commonsense Knowledge Infusion for Multimodal Mental Health Meme Classification</span>
+            <span class="pub-authors"><span class="me">Abdullah Mazhar</span>, Zuhair Hasan Shaik, Aseem Srivastava, Polly Ruhnke, Lavanya Vaddavalli, Sri Keshav Katragadda, Shweta Yadav, Md. Shad Akhtar</span>
+            <span class="venue"><b>WWW 2025</b> · The ACM Web Conference (A*) <span class="badge">Oral</span></span>
+            <span class="tags">
+              <a href="https://dl.acm.org/doi/10.1145/3696410.3714778" target="_blank">paper</a>
+              <a href="https://github.com/flamenlp/M3H/tree/main" target="_blank">code</a>
+              <a href="https://docs.google.com/presentation/d/1P2-_LWPxBmQ4yKf6qfvWCjqjlWWLFNw7fbivZMl6C0I/edit?usp=sharing" target="_blank">slides</a>
+            </span>
+          </div>
+        </div>
+
+        <!-- Under review -->
+        <p class="section-title" style="margin-top:2rem;">Preprints &amp; Under Review</p>
+
+        <div class="pub">
+          <div class="pub-thumb"><i class="fa-regular fa-file-lines" style="font-size:1.6rem;color:var(--faint)"></i></div>
+          <div>
+            <span class="pub-title">Faithful and Information-Seeking Response Generation for Mental-Health Support</span>
+            <span class="pub-authors"><span class="me">Abdullah Mazhar</span>, et al.</span>
+            <span class="venue"><b>Under Review</b> · EMNLP 2026 <span class="badge review">In Review</span></span>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-thumb"><i class="fa-regular fa-file-lines" style="font-size:1.6rem;color:var(--faint)"></i></div>
+          <div>
+            <span class="pub-title">Neuron Steering for Low-Resource Machine Translation in Large Language Models</span>
+            <span class="pub-authors"><span class="me">Abdullah Mazhar</span>, et al.</span>
+            <span class="venue"><b>Under Review</b> · EMNLP 2026 <span class="badge review">In Review</span></span>
+          </div>
+        </div>
+
+        <hr>
+
+        <!-- Experience -->
+        <p class="section-title">Experience</p>
+
+        <div class="xp">
+          <div class="xp-logo"><img src="images/logos/flame.png" alt="IIIT Delhi"></div>
+          <div>
+            <h4>Ph.D. Candidate</h4>
+            <div class="org"><strong>IIIT Delhi · FLaMe Lab</strong></div>
+            <div class="when">Dec 2023 – Present · Delhi, India</div>
+          </div>
+        </div>
+
+        <div class="xp">
+          <div class="xp-logo"><img src="images/logos/iitmadras.svg" alt="IIT Madras"></div>
+          <div>
+            <h4>Project Officer</h4>
+            <div class="org"><strong>IIT Madras</strong></div>
+            <div class="when">Sep 2022 – Dec 2023 · Chennai, India</div>
+            <div class="note">Built end-to-end <strong>ASR</strong> and <strong>TTS</strong> systems for Indian languages under the <strong>Bhashini</strong> initiative.</div>
+          </div>
+        </div>
+
+        <div class="xp">
+          <div class="xp-logo"><img src="images/logos/birlasoft.png" alt="Birlasoft"></div>
+          <div>
+            <h4>Data Scientist</h4>
+            <div class="org"><strong>Birlasoft Ltd.</strong></div>
+            <div class="when">May 2021 – Sep 2022 · Noida, India</div>
+            <div class="note">Insurance-claim automation with Azure AI, chatbots, and ML models.</div>
+          </div>
+        </div>
+
+      </main>
     </div>
-</body>
-</html>
-              
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-    <style>
-            body {
-                    font-family: 'Lato', sans-serif;
-                    font-weight: 350;
-                    color: #333;
-                    font-size: 17px;
-                    background-color:rgb(255, 255, 255);
-            }
-                
-            b {
-                    font-weight: 400;
-            }
-            .name {
-                    font-size: 23pt;
-                    color: #111;
-            }
-
-            .sideimg {
-                    width: 100%;
-                    border: 1px solid #ccc;
-            }
-            .institution {
-                    font-size: 13px;
-                    color: #222;
-            }
-            .years {
-                    font-size: 12px;
-                    color: #666666;
-            }
-
-            .instilogo {
-                    height: 50px;
-                    filter: grayscale(20%);
-            }
-
-            a {
-                    color: #004d00;
-                    font-weight: normal;
-            }
-
-            a:hover {
-                text-decoration: none;
-                color: #004d00;
-            }
-
-            .about {
-                    text-align: justify;
-                    text-justify: inter-word;
-            }
-
-            .header {
-                    font-family: 'Titillium Web', sans-serif;
-                    font-size: 1.4em;
-                    font-weight: 400;
-                    color: #111;
-            }
-
-            .papertitle {
-                    color: #111;
-                    font-weight: 400;
-            }
-
-            .thisauthor {
-                    color: #000000;
-                    text-decoration: underline;
-                    font-weight: 400;
-            }
-            .noter {
-                    font-size: 9pt;
-            }
-            .tagsep {
-                    padding: 4px;
-            }
-
-            li {
-                    margin: 6px 0 6px 0;
-                    line-height: 1.6;
-            }
-            .tag {
-                    border: 1px solid #004d00;
-                    padding: 2px 4px;
-                    border-radius: 3px;
-                    margin: 0px 1px;
-                    font-size: 90%;
-                    background-color: rgba(0, 77, 0, 0.05);
-            }
-
-            .confshort {
-                    font-weight: 300;
-            }
-
-            .conf {
-                    display: inline-block;
-                    padding-bottom: 4px;
-            }
-
-            .paper {
-            }
-
-            .menulink {
-                    color: #004d00;
-                    font-weight: normal;
-            }
-
-            .menulink:hover {
-                    color: #111;
-            }
-
-            .profilepic {
-                    width: 180px;
-            }
-
-            @media (min-width: 768px) {
-                    .fixed-posi {
-                            position: fixed;
-                    }
-            }
-
-            @media only screen and (max-width: 900px) {
-                    .allstuff {
-                            padding-top: 0px !important;
-                    }
-
-                    .allstuffp {
-                            padding-top: 0px !important;
-                    }
-
-                    .profilepic {
-                            width: 150px;
-                            padding-top: 0px !important;
-                            padding-bottom: 0px !important;
-                    }
-
-                    .menur {
-                            padding-top: 18px !important;
-                    }
-
-                    .sideimg {
-                            display: none;
-                    }
-
-                    .paper {
-                            border-left: 1px solid #ddd;
-                    }
-            }
-    </style>
 
     <script>
-            if (window.matchMedia('(max-width: 767px)').matches) {
-                    $(".sideimg").remove();
-            }
-            $(function () {
-                    $.each(document.images, function () {
-                            var this_image = this;
-                            var src = $(this_image).attr('src') || '';
-                            if (!src.length > 0) {
-                                    var lsrc = $(this_image).attr('lsrc') || '';
-                                    if (lsrc.length > 0) {
-                                            var img = new Image();
-                                            img.src = lsrc;
-                                            $(img).on('load', function () {
-                                                    this_image.src = this.src;
-                                            });
-                                    }
-                            }
-                    });
-            });
+      (function () {
+        var root = document.documentElement;
+        var icon = document.getElementById('themeIcon');
+        var label = document.getElementById('themeLabel');
+        var stored = localStorage.getItem('theme');
+        var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        var theme = stored || (prefersDark ? 'dark' : 'light');
+        apply(theme);
+        function apply(t) {
+          root.setAttribute('data-theme', t);
+          if (t === 'dark') { icon.className = 'fa-solid fa-sun'; label.textContent = 'Light mode'; }
+          else { icon.className = 'fa-solid fa-moon'; label.textContent = 'Dark mode'; }
+        }
+        document.getElementById('themeToggle').addEventListener('click', function () {
+          theme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          localStorage.setItem('theme', theme);
+          apply(theme);
+        });
+      })();
     </script>
-
+  </body>
 </html>
